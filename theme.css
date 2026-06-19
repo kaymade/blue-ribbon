@@ -150,7 +150,7 @@ settings:
     --tab-outline-color: transparent;
 
     --nav-item-color: var(--icy-blue-muted);
-    --nav-item-color-hover: var(--icy-blue);
+    --nav-item-color-hover: var(--ink);
     --nav-item-color-active: var(--icon-cream);
     --nav-item-background-hover: rgba(85, 145, 209, 0.22);
     --nav-item-background-active: rgba(193, 236, 253, 0.18);
@@ -211,7 +211,7 @@ settings:
     --midnight-soft: #49639d;
     --tufts-blue: #5591d1;
     --tufts-blue-soft: #78aee5;
-    --icy-blue: #c1ecfd;
+    --icy-blue: #1f5f96;
     --icy-blue-muted: #4f7fa8;
     --buttercream: #fff9df;
     --buttercream-muted: #e8ddc1;
@@ -250,10 +250,10 @@ settings:
     --background-modifier-active: rgba(255, 249, 223, 0.5);
     --background-modifier-selected: rgba(255, 249, 223, 0.42);
 
-    --text-normal: var(--icy-blue);
+    --text-normal: var(--midnight);
     --text-muted: var(--icy-blue-muted);
     --text-faint: var(--tufts-blue-soft);
-    --text-on-accent: var(--ink-shade);
+    --text-on-accent: var(--ink);
     --text-accent: var(--primary-red);
     --text-accent-hover: var(--primary-red-soft);
     --text-selection: rgba(255, 249, 223, 0.72);
@@ -277,14 +277,15 @@ settings:
     --ribbon-background: var(--ink);
     --tab-container-background: var(--ink);
     --tab-text-color: var(--icon-cream);
-    --tab-text-color-focused-active: var(--icy-blue);
+    --tab-text-color-focused-active: var(--ink);
+    --inline-title-color: var(--midnight);
     --active-tab-background: #eaf5ff;
     --active-tab-border: var(--tufts-blue-soft);
     --tab-outline-color: transparent;
 
     --nav-item-color: var(--icy-blue-muted);
-    --nav-item-color-hover: var(--icy-blue);
-    --nav-item-color-active: var(--icy-blue);
+    --nav-item-color-hover: var(--ink);
+    --nav-item-color-active: var(--ink);
     --nav-item-background-hover: rgba(85, 145, 209, 0.18);
     --nav-item-background-active: rgba(217, 8, 50, 0.18);
 
@@ -292,9 +293,11 @@ settings:
     --blockquote-color: var(--primary-red-soft);
     --code-background: rgba(85, 145, 209, 0.22);
     --code-normal: #071f45;
-    --inline-code-color: var(--ink);
+    --inline-code-color: var(--midnight);
     --inline-code-background: rgba(217, 8, 50, 0.14);
     --inline-code-border-color: rgba(217, 8, 50, 0.38);
+    --table-border-color: var(--midnight);
+    --table-header-border-color: var(--midnight);
 
     --code-tag: #e00046;
     --code-attribute: #7c2cff;
@@ -435,16 +438,16 @@ body {
 .theme-light .clickable-icon[aria-label*="More options" i],
 .theme-light .clickable-icon[aria-label*="Read view" i],
 .theme-light .clickable-icon[aria-label*="Reading view" i] {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .workspace-leaf-content[data-type="comments"] button:first-of-type {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .mod-right-split button,
 .theme-light .mod-right-split .clickable-icon[aria-label*="All Notes" i] {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light button,
@@ -454,7 +457,7 @@ body {
 .theme-light .modal button,
 .theme-light .prompt button,
 .theme-light .suggestion-item {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .modal.mod-settings button,
@@ -462,7 +465,7 @@ body {
 .theme-light .modal.mod-settings .dropdown,
 .theme-light .modal.mod-settings select {
     color: var(--icon-cream);
-    background-color: var(--ink);
+    background-color: var(--midnight);
     border-color: var(--line);
 }
 
@@ -762,7 +765,7 @@ table,
 .theme-light .metadata-add-button,
 .theme-light .metadata-property-value,
 .theme-light .metadata-property-key {
-    color: var(--icy-blue);
+    color: var(--midnight);
 }
 
 .theme-light .metadata-property-key,
@@ -814,7 +817,7 @@ table,
 
 .theme-light table,
 .theme-light .markdown-rendered table {
-    border-color: var(--line);
+    border-color: var(--midnight);
 }
 
 .theme-light thead,
@@ -825,7 +828,7 @@ table,
 .theme-light .markdown-source-view.mod-cm6 .cm-table-widget th {
     background: var(--ink);
     color: var(--icon-cream);
-    border-color: var(--line-strong);
+    border-color: var(--midnight);
 }
 
 .theme-light th *,
@@ -835,8 +838,9 @@ table,
 }
 
 .theme-light td,
-.theme-light .markdown-rendered td {
-    border-color: var(--line);
+.theme-light .markdown-rendered td,
+.theme-light .markdown-source-view.mod-cm6 .cm-table-widget td {
+    border-color: var(--midnight);
 }
 
 .theme-light tr:hover,
@@ -925,12 +929,12 @@ table,
 
 .theme-light .search-result-file-matched-text {
     background: rgba(217, 8, 50, 0.18);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .modal.mod-settings .setting-item-heading,
 .theme-light .modal.mod-settings .setting-item-name {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .modal.mod-settings .setting-item-description,
@@ -944,12 +948,12 @@ table,
 }
 
 .theme-light .modal.mod-settings .vertical-tab-nav-item {
-    color: var(--icy-blue);
+    color: var(--midnight);
 }
 
 .theme-light .modal.mod-settings .vertical-tab-nav-item.is-active {
     background: rgba(217, 8, 50, 0.2);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .checkbox-container,
@@ -974,7 +978,7 @@ table,
 .theme-light .highlightr-menu {
     background: var(--background-primary);
     border-color: var(--line);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .menu-item,
@@ -991,7 +995,7 @@ table,
 .theme-light .dropdown,
 .theme-light select,
 .theme-light .highlightr-menu * {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .menu-item:hover,
@@ -1023,7 +1027,7 @@ table,
 .theme-light .menu-item-shortcut,
 .theme-light .menu-item-submenu-indicator,
 .theme-light .menu-item-submenu-indicator svg {
-    color: var(--ink);
+    color: var(--midnight);
     stroke: var(--ink);
 }
 
@@ -1076,7 +1080,7 @@ table,
 .theme-light .prompt:has(.omnisearch-input-container) .suggestion-container {
     background: var(--background-primary);
     border-color: var(--line);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .omnisearch-modal input,
@@ -1092,7 +1096,7 @@ table,
 .theme-light .omnisearch-result__folder-path,
 .theme-light .omnisearch-result__extension,
 .theme-light .omnisearch-result__counter {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .omnisearch-modal .suggestion-item:hover,
@@ -1102,7 +1106,7 @@ table,
 .theme-light .prompt:has(.omnisearch-input-container) .suggestion-item.is-selected,
 .theme-light .prompt:has(.omnisearch-input-container) .suggestion-item.mod-complex.is-selected {
     background: rgba(217, 8, 50, 0.12);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .omnisearch-highlight,
@@ -1212,7 +1216,7 @@ table,
 .theme-light .view-header .clickable-icon,
 .theme-light .view-header .view-action,
 .theme-light .view-header svg {
-    color: var(--ink);
+    color: var(--midnight);
     stroke: currentColor;
 }
 
@@ -1234,6 +1238,11 @@ table,
 .markdown-source-view.mod-cm6 .HyperMD-header-1,
 .markdown-source-view.mod-cm6 .cm-header-1 {
     font-family: var(--title-font);
+}
+
+.theme-light .inline-title,
+.theme-light .markdown-source-view.mod-cm6 .inline-title {
+    color: var(--midnight);
 }
 
 .theme-light .markdown-rendered h1,
@@ -1725,7 +1734,7 @@ mark,
 .theme-light .suggestion *,
 .theme-light .omnisearch-modal,
 .theme-light .omnisearch-modal * {
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .search-result-file-title,
@@ -1754,7 +1763,7 @@ mark,
 .theme-light .modal.mod-settings .setting-item-control button.mod-destructive {
     background: var(--marquee-deep);
     border-color: var(--tufts-blue-soft);
-    color: var(--ink);
+    color: var(--midnight);
 }
 
 .theme-light .modal.mod-settings button[aria-label*="Uninstall" i]:hover,
