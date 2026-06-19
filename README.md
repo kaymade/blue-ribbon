@@ -1,0 +1,2 @@
+# blue-ribbon
+obsidian theme
