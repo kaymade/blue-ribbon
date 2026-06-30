@@ -50,4 +50,4 @@ Current options include:
 
 ## Installation
 
-Download the theme directly from the Obsidian Theme Store (coming soon!) or download directly from Github and place in your local Obsidian themes folder.
+Download the theme directly from the Obsidian Theme Store or download directly from Github and place in your local Obsidian themes folder.
